@@ -10,10 +10,10 @@ Available hooks:
 If you want to install the hooks for each new git-repo you create you can install them globally:
 
     git clone https://github.com/sumocoders/hooks.git .
-    mv post-checkout ~/.git/hooks/post-checkout
-    mv pre-commit ~/.git/hooks/pre-commit
-    chmod +x ~/.git/hooks/post-checkout
-    chmod +x ~/.git/hooks/pre-commit
+    cp post-checkout ~/.git_template/hooks/post-checkout
+    chmod +x ~/.git_template/hooks/post-checkout
+    cp pre-commit ~/.git_template/hooks/pre-commit
+    chmod +x ~/.git_template/hooks/pre-commit
 
 ## Available hooks
 
