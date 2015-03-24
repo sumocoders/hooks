@@ -34,6 +34,17 @@ for compass-files and compile them.
 The pre-commit hook will check the files that will be commited, the checks are 
 managed in our `sumo hook check` commando.
 
+#### Dependencies
+
+This hook has some dependencies:
+
+* Make sure sumodev is installed
+* Make sure php is available
+* Make sure phpcs is installed, see http://pear.php.net/package/PHP_CodeSniffer
+* Make sure csslint is installed, see https://github.com/stubbornella/csslint/wiki/Command-line-interface
+* Make sure scss-lint is installed, see https://github.com/causes/scss-lint
+* Make sure esvalidate is installed, see https://github.com/duereg/esvalidate
+
 #### Installation
 
     curl -O https://raw.githubusercontent.com/sumocoders/hooks/master/pre-commit

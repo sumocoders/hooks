@@ -35,10 +35,10 @@ if [ -n "$files" ]; then
 
     # run our sumo hook check command
     output=$(sumo hooks check ${paths[@]})
-    echo "$output"
+    echo -e "$output"
 
     # check if there are errors
-    if [[ $output =~ .*Error\ found:\ .* ]]
+    if [[ $output =~ .*Error:\ .* ]]
     then
         errors=true;
     fi
@@ -50,5 +50,7 @@ git stash pop -q
 # if we have errors, exit with 1
 if [ $errors = true ]
 then
+    echo ""
+    echo "If you are sure you want to commit those files, use --no-verify option"
     exit 1
 fi
