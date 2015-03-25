@@ -51,6 +51,6 @@ git stash pop -q
 if [ $errors = true ]
 then
     echo ""
-    echo "If you are sure you want to commit those files, use --no-verify option"
+    echo "If you are sure you want to commit those files, use --no-verify (-n) option."
     exit 1
 fi
