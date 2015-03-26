@@ -10,10 +10,10 @@ Available hooks:
 If you want to install the hooks for each new git-repo you create you can install them globally:
 
     git clone https://github.com/sumocoders/hooks.git .
-    mv post-checkout ~/.git/hooks/post-checkout
-    mv pre-commit ~/.git/hooks/pre-commit
-    chmod +x ~/.git/hooks/post-checkout
-    chmod +x ~/.git/hooks/pre-commit
+    mv post-checkout ~/.git_template/hooks/post-checkout
+    mv pre-commit ~/.git_template/hooks/pre-commit
+    chmod +x ~/.git_template/hooks/post-checkout
+    chmod +x ~/.git_template/hooks/pre-commit
 
 ## Available hooks
 
@@ -26,8 +26,8 @@ for compass-files and compile them.
 #### Installation
 
     curl -O https://raw.githubusercontent.com/sumocoders/hooks/master/post-checkout
-    mv pre-commit .git/hooks/post-checkout
-    chmod +x .git/hooks/post-checkout
+    mv post-checkout .git_template/hooks/pre-checkout
+    chmod +x .git_template/hooks/post-checkout
 
 ### pre-commit
 
@@ -48,5 +48,5 @@ This hook has some dependencies:
 #### Installation
 
     curl -O https://raw.githubusercontent.com/sumocoders/hooks/master/pre-commit
-    mv pre-commit .git/hooks/pre-commit
-    chmod +x .git/hooks/pre-commit
+    mv pre-commit .git_template/hooks/pre-commit
+    chmod +x .git_template/hooks/pre-commit
