@@ -34,7 +34,7 @@ if [ -n "$files" ]; then
     done
 
     # run our sumo hook check command
-    output=$(sumo hooks check ${paths[@]})
+    output=$(script -q /dev/null sumo hooks check ${paths[@]})
     echo -e "$output"
 
     # check if there are errors
